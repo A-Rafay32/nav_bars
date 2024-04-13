@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nav_bars/constants.dart';
 import 'package:nav_bars/nav_bar_1/nav_bar_1.dart';
 import 'package:nav_bars/nav_bar_2/nav_bar_2.dart';
+import 'package:nav_bars/nav_bar_3/nav_bar_3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     final w = MediaQuery.sizeOf(context).width;
-    List<Widget> navBars = [BottomNavBar1(w: w), BottomNavBar2(w: w)];
+    List<Widget> navBars = [
+      BottomNavBar1(w: w),
+      BottomNavBar2(w: w),
+      BottomNavBar3(w: w)
+    ];
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,

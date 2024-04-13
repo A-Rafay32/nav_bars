@@ -39,7 +39,7 @@ class _BottomNavBar1State extends State<BottomNavBar1> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: List.generate(
               navBarLabels.length,
-              (index) => BottomNavBarItem(
+              (index) => BottomNavBarItem1(
                     iconAsset: navBarSvgs[index],
                     isTagSelected: currentIndex == index ? true : false,
                     onTap: () {
@@ -53,8 +53,8 @@ class _BottomNavBar1State extends State<BottomNavBar1> {
   }
 }
 
-class BottomNavBarItem extends StatelessWidget {
-  const BottomNavBarItem(
+class BottomNavBarItem1 extends StatelessWidget {
+  const BottomNavBarItem1(
       {super.key,
       required this.text,
       this.iconAsset,
